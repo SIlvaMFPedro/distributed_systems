@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+java -Djava.rmi.server.codebase="file://$(pwd)/"\
+     -Djava.rmi.server.useCodebaseOnly=false\
+     client_side.mythreadbroker.MyThreadBroker_Exec $1
+
